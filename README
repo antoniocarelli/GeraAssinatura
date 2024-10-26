@@ -1,0 +1,40 @@
+
+# GeraAssinatura
+
+## Descrição
+
+Este projeto Flask simples gera imagens de assinatura personalizadas a partir de um modelo HTML, usando dados fornecidos por meio de parâmetros de consulta em uma solicitação GET.
+
+O aplicativo irá gerar uma imagem PNG da assinatura com os dados fornecidos e baixá-la automaticamente.
+
+## Como usar
+
+1. **Executar o aplicativo:**
+   ```bash
+   flask run
+
+2. **Enviar solicitação GET:**
+   Acesse a URL http://127.0.0.1:5000/gerarAssinatura com os seguintes parâmetros de consulta:
+   * nome
+   * cargo
+   * telefone (opcional)
+   * skype (opcional)
+
+_Exemplo_:
+http://127.0.0.1:5000/gerarAssinatura?nome=João%20Neto&cargo=Gerente%20de%20Projetos&telefone=+55%20(11)%2099999-9999&skype=joaoneto
+
+
+## Personalização
+Edite o arquivo assinatura.html para personalizar o modelo de assinatura. Use a sintaxe do Jinja2 para inserir variáveis ​​de modelo.
+
+## Dependências:
+* flask
+* imgkit
+
+Instale as dependências usando:
+   ```bash
+   pip install -r requirements.txt
+
+### Observações
+Certifique-se de ter o wkhtmltopdf instalado em seu sistema para que o imgkit funcione corretamente.
+Os espaços nos valores dos parâmetros de consulta devem ser codificados como %20.
