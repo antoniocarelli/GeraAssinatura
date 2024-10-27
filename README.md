@@ -4,7 +4,7 @@
 -->
 <a id="readme-top"></a>
 
-[![Contributors][contributors-shield]][contributors-url] [![Forks][forks-shield]][forks-url] [![Stargazers][stars-shield]][stars-url] [![MIT License][license-shield]][license-url]
+[![Contributors][contributors-shield]][contributors-url] [![Forks][forks-shield]][forks-url] [![Stargazers][stars-shield]][stars-url] [![MIT][license-shield]][license-url]
 
 </br>
 <div align="center">
@@ -115,7 +115,7 @@ Não se esqueça de dar uma estrela ao projeto!
 
 Este projeto utiliza o modelo de licenciamento do MIT.
 
-[![MIT License][license-shield]][license-url]
+[![MIT][license-shield]][license-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
