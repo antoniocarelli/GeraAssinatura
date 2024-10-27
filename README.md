@@ -29,7 +29,7 @@ O aplicativo irá gerar uma imagem PNG da assinatura com os dados fornecidos e b
 - [Personalização](#personalização)
       - [Exemplos](#exemplos-1)
 - [Dependências](#dependências)
-- [Prerequisitos](#prerequisitos)
+- [Pré Requisitos](#pré-requisitos)
 - [Como contribuir](#como-contribuir)
 - [Direitos Autorais](#direitos-autorais)
 </details>
@@ -42,16 +42,13 @@ O aplicativo irá gerar uma imagem PNG da assinatura com os dados fornecidos e b
 <!-- GETTING STARTED -->
 ## Como usar
 
-1. **Executar**
-  `flask run`
-  <br />
+1. **Executar** `flask run`
 
-2. **Enviar solicitação GET**
-    Na URL http://127.0.0.1:5000/gerarAssinatura passe os seguintes parâmetros:
-    * nome
-    * cargo
-    * telefone (opcional)
-    * skype (opcional)
+1. **Enviar solicitação GET** na URL http://127.0.0.1:5000/gerarAssinatura, passando os seguintes parâmetros:
+ * nome
+ * cargo
+ * telefone (opcional)
+ * skype (opcional)
 
 ##### Exemplos
     http://127.0.0.1:5000/gerarAssinatura?nome=João%20Neto&cargo=Gerente%20de%20Projetos&telefone=+55%20(11)%2099999-9999&skype=joaoneto
@@ -59,7 +56,7 @@ O aplicativo irá gerar uma imagem PNG da assinatura com os dados fornecidos e b
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
 ## Personalização
-Edite o arquivo assinatura.html para personalizar o modelo da assinatura. Use a sintaxe do Jinja2 para determinar como os dados serão exibidos.
+Edite o arquivo _assinatura.html_ para personalizar o modelo da assinatura. Use a sintaxe do Jinja2 para determinar como os dados serão exibidos.
 
 ##### Exemplos
 Variável: `{{ telefone }}`
@@ -79,7 +76,7 @@ pip install -r requirements.txt
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
-## Prerequisitos
+## Pré Requisitos
 Certifique-se de ter o _wkhtmltopdf_ instalado em seu sistema para que o imgkit funcione corretamente.
 ```console
 dnf install wkhtmltopdf
@@ -116,6 +113,7 @@ Não se esqueça de dar uma estrela ao projeto!
 ## Direitos Autorais
 
 Este projeto utiliza o modelo de licenciamento do MIT.
+
 [![MIT License][license-shield]][license-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
