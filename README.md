@@ -25,9 +25,9 @@ O aplicativo irá gerar uma imagem PNG da assinatura com os dados fornecidos e b
 - [Conteúdo](#conteúdo)
 - [Construído com](#construído-com)
 - [Como usar](#como-usar)
-      - [Exemplos](#exemplos)
+      - [Exemplo](#exemplo)
 - [Personalização](#personalização)
-      - [Exemplos](#exemplos-1)
+      - [Exemplo](#exemplo-1)
 - [Dependências](#dependências)
 - [Pré Requisitos](#pré-requisitos)
 - [Como contribuir](#como-contribuir)
@@ -50,7 +50,7 @@ O aplicativo irá gerar uma imagem PNG da assinatura com os dados fornecidos e b
  * telefone (opcional)
  * skype (opcional)
 
-##### Exemplos
+##### Exemplo
     http://127.0.0.1:5000/gerarAssinatura?nome=João%20Neto&cargo=Gerente%20de%20Projetos&telefone=+55%20(11)%2099999-9999&skype=joaoneto
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
@@ -58,8 +58,9 @@ O aplicativo irá gerar uma imagem PNG da assinatura com os dados fornecidos e b
 ## Personalização
 Edite o arquivo _assinatura.html_ para personalizar o modelo da assinatura. Use a sintaxe do Jinja2 para determinar como os dados serão exibidos.
 
-##### Exemplos
+##### Exemplo
 Variável: `{{ telefone }}`
+
 Condicional: `{% if telefone %}` | `{% else %}` | `{% endif %}`
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
